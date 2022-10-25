@@ -20,8 +20,9 @@ def listContains(list: list, x: int) -> bool:
             return True
     return False
 
+
 def listCube(list1: list, list2: list) -> list:
-    list_combined =[]
+    list_combined = []
     for i in list1:
         if not listContains(list_combined, i**3):
             list_combined.append(i**3)
@@ -29,6 +30,7 @@ def listCube(list1: list, list2: list) -> list:
         if not listContains(list_combined, i ** 3):
             list_combined.append(i ** 3)
     return list_combined
+
 
 print("\nzadanie 1")
 text = hello("Jan", "Kowalski")
@@ -64,4 +66,9 @@ print(listContains(list, x))
 print("\nzadanie 6")
 list1 = [1, 2, 5, 7, 3, 1]
 list2 = [1, 2, 5, 7, 8]
-print("lista 1: {}\nlista 2: {}\nwynik dzialania funkcji: {}".format(list1,list2,listCube(list1,list2)))
+print("lista 1: {}"
+      "\nlista 2: {}"
+      "\nwynik dzialania funkcji: {}".format(
+            list1,
+            list2,
+            listCube(list1, list2)))
