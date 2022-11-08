@@ -3,11 +3,11 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-import magazine.Product as Product
+from magazine.Product import Product
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    newProduct = Product.Product()
+    newProduct = Product()
     newProduct.name = "bread"
     print(newProduct.function())
 
